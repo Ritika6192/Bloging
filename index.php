@@ -13,9 +13,17 @@
         <meta name="google-site-verification" content="7dXHQhbQPnjX2g9MnlDRf8PHcP-ZOZy_uh1vJjfrV_8" />
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Network Hub</title>
+        <meta name="description" content="Learn Networking from basics." />
+        <meta name="title" content="Networking Hub | Networking Blogs" />
+        <title>Networking Hub | Networking Blogs</title>
+        <meta property="og:site_name" content="Networking Hub">
+        <meta property="og:title" content="Networking Hub | Networking Blogs" />
+        <meta property="og:description" content="Learn Networking from basics." />
+        <meta property="og:image" itemprop="image" content="assets/img/logo.png">
+        <meta property="og:type" content="metworkinghub.com" />
+
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
+
         <!-- Font Awesome icons-->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!-- Google fonts-->
