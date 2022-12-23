@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(31, 29, 29);
+}
+.logincontainer{
+    position: relative;
+    width: 380px;
+    height: 420px;
+    background-color: rgb(31, 29, 29);
+    border-radius: 10px;
+    overflow: hidden;
+}
+.logincontainer::before{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,rgb(132, 12, 180));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+}
+.logincontainer::after{
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg,transparent,rgb(132, 12, 180));
+    transform-origin: bottom right;
+    animation: animate 6s linear infinite;
+    animation-delay: -3s;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.form{
+    position: absolute;
+    z-index: 10;
+    background-color: black;
+    inset: 2px;
+    border-radius: 10px;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+}
+.button{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+.button:hover{
+    border: solid rgb(132, 12, 180);
+}
