@@ -44,7 +44,7 @@
     </nav>
     <!-- blog -->
     <div class="row w-100" style="padding-top:140px">
-        <div class="col-sm-8">
+        <div class="cot col-sm-8">
         <?php
         while($row = mysqli_fetch_assoc($data))
         {
@@ -52,13 +52,13 @@
             <div class="main_div">
                 <header class="masthead">
                     <div class="w-100">
-                        <div class="masthead-heading text-uppercase text-dark" style="line-height: initial">
+                        <div class="masthead-heading text-uppercase text-dark">
                             <h1 class="w-100"><?php echo $row['title']; ?></h1>
                         </div>
                     </div>
                 </header> 
                 <div class="blog_container" style="text-align:justify">
-                        <div class="container-fluid text-dark p-3">
+                        <div class="container text-dark ">
                             <?php echo $row['body'];?>
                         </div>
                     <div class="video text-center pt-5">
