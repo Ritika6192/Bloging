@@ -3,7 +3,7 @@
     session_start();
 if(isset($_POST['email'])){
       $email=$_POST['email'];
-      $password=$_POST['password'];
+      $password=md5($_POST['password']);
       
       $_SESSION['useremail'] = $email;
       $_SESSION['userpassword'] = $password;
