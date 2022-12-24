@@ -39,8 +39,8 @@
         <!-- navigation bar -->
         <nav class="navbar navbar-dark bg-transparent fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand " href="#">-NH-</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <a class="navbar-brand text-secondary" href="#">-NH-</a>
+                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -54,12 +54,12 @@
                         <div class="profile">
                             <img src="assets/img/about/0.jpg" alt="profile pic" width="100%">
                         </div>
-                        <div class="info text-white text-center">
+                        <div class="info text-center text-white">
                             <h5>“knowledge Is Not Power The Application Of Knowledge Is Power”</h5>
                             <p class="follow text-muted">Follow me on:</p>
                             <ul class="text-muted">
-                                <li><a href="https://www.instagram.com/code.with.ritika"><i class="fab fa-instagram"></a></i></li>
-                                <li><a href="https://youtube.com/@networkinghub2438"><i class="fab fa-youtube"></i></a></li>
+                                <li><a href="https://www.instagram.com/code.with.ritika" class="text-white"><i class="fab fa-instagram"></a></i></li>
+                                <li><a href="https://youtube.com/@networkinghub2438" class="text-white"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                             <p class="text-muted">Developer: Ritika Thombre</p>
                         </div>
@@ -69,8 +69,11 @@
         </nav>
         <!-- Masthead-->
         <div class="banner">
+            <div class="ring">
+                <img src="assets/img/cover/ring.png" alt="asdf" />
+            </div>
             <div class="overlay">
-                <h1 class="text-white" id="heading"></h1>
+                <h1 id="heading" class="text-white">Networking Hub</h1>
             </div>
         </div>
         </header>
@@ -80,8 +83,8 @@
             <div class="container mt-5">
                 <div class="container">                
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase text-white">BLOGS</h2>
-                        <p class="section-subheading text-white">Here are some of my Blogs!</p>
+                        <h2 class="section-heading text-uppercase">BLOGS</h2>
+                        <p class="section-subheading">Here are some of my Blogs!</p>
                     </div>
                     <div class="row gx-4">
                     <?php
@@ -89,7 +92,7 @@
                         {
                     ?>
                         <div class="col-sm-3 mb-4">
-                            <div class="card w-100" style="border:none">
+                            <div class="card w-100">
                                 <img class="card-img-top" src="<?php echo $row['cover']; ?>" alt="Card image cap" height="200px">
                                 <div class="card-body border" style="box-size:border-box">
                                     <h3 class="card-title w-100 h5"><?php echo $row['title']; ?></h3>
@@ -107,25 +110,28 @@
             </div>
         </section>
         <!-- about section -->
-        <section class="container" style="padding-top: 80px" >
+        <div class="about_bg">
+        <section class="container" class="about_bg" style="padding-top: 80px" >
                 <div class="row">
                     <div class="col-sm-6">
                         <img class="w-100" src="assets/img/about/about.jpg" alt="image" width="50%">
+                        <div class="mb-5"></div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="text">
+                        <div class="text text-light">
                             <h2>What is Networking?</h2>
                             <p class="about_text">A computer network is a group of two or more computers that are linked together. Networks are usually used to share resources, exchange files or communicate with other users. There are many types of networks according to their size. Three main types of network are LAN(Local area network),MAN(Metropoletian area network) and WAN(Wide area network)</p>
                         </div>
                     </div>
                 </div>
         </section>
+        </div>
         <!-- feedback -->
         <section style="padding: 94px 0px 94px" id="feedback">
             <!-- Wrapper container -->
             <div class="feedback_container">
                 <div class="text-center">
-                    <h2 class="text-uppercase text-white">Give us a Feedback!</h2>
+                    <h2 class="text-uppercase">Give us a Feedback!</h2>
                 </div>
                 <form method="POST" action="feedbackquery.php">
                     <!-- Name input -->
@@ -158,11 +164,11 @@
     </body>
         <!-- Runing text animation -->
         <script src="https://gt6192.github.io/PratikGTJsLib/Pratik_GT_textAp.js"></script>
-        <script>
+        <!-- <script>
             window.onload = function(){
                 new Pratik_GT_textAp("Networking Hub", 100, "heading");
             }
-        </script>
+        </script> -->
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

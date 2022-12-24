@@ -38,7 +38,7 @@
     <body id="page-top">
     <!-- Navbar -->
     <nav class="navbar fixed-top" style="background-color:#292626">
-    <a class="navbar-brand" style="padding-left:20px" href="index.php">
+    <a class="navbar-brand text-white" style="padding-left:20px" href="index.php">
         Home
     </a>
     </nav>
@@ -52,17 +52,17 @@
             <div class="main_div">
                 <header class="masthead">
                     <div class="w-100">
-                        <div class="masthead-heading text-uppercase text-white" style="line-height: initial">
+                        <div class="masthead-heading text-uppercase text-dark" style="line-height: initial">
                             <h1 class="w-100"><?php echo $row['title']; ?></h1>
                         </div>
                     </div>
                 </header> 
                 <div class="blog_container" style="text-align:justify">
-                        <div class="container-fluid text-white p-3">
+                        <div class="container-fluid text-dark p-3">
                             <?php echo $row['body'];?>
                         </div>
                     <div class="video text-center pt-5">
-                        <h2 class="text-white text-center" style="padding:10px">The following video will enhance your understanding:</h2>
+                        <h2 class="text-dark text-center" style="padding:10px">The following video will enhance your understanding:</h2>
                         <div class="d-flex p-5" style="justify-content:space-between">
                     <div class="previous">
                         <a href="article.php?article=<?php 
@@ -104,8 +104,8 @@
             <div style="position:sticky;top:50px">
                 <div class="row scroll">
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase text-white">BLOGS</h2>
-                        <p class="section-subheading text-white">Suggested Blogs</p>
+                        <h2 class="section-heading text-uppercase text-dark">BLOGS</h2>
+                        <p class="section-subheading text-dark">Suggested Blogs</p>
                     </div>
                         <?php
                         while($row2 = mysqli_fetch_assoc($data2))

@@ -2,9 +2,9 @@
   padding: 0;
   margin: 0;
 }
-body{
+/* body{
   background: linear-gradient(90deg, rgba(11,11,122,1) 2%, rgba(20,104,159,1) 52%, rgba(11,11,122,1) 100%);
-}
+} */
 .main_div{
   width: 100%;
   display: inline-block;
@@ -12,11 +12,11 @@ body{
 .card_container{
   width: 80%;
 }
-footer span{
+/* footer span{
   color: #fff;
-}
+} */
 .offcanvas-body{
-  background: linear-gradient(#04619F,#000000);
+  background: linear-gradient(#000000,#000000);
 }
 .profile{
   border-radius: 100%;
@@ -42,9 +42,9 @@ li{
   display: inline;
   margin-right: 5px;
 }
-a{
+/* a{
   color: rgba(233, 221, 221, 0.884) !important;
-}
+} */
 header.masthead {
     width: 100%;
     margin: auto;
@@ -111,15 +111,14 @@ header.masthead {
   .text{
     width: 100%;
     text-align: justify;
-    color: #fff;
   }
   .about_text{
     font-weight: 600;
     font-size: larger;
   }
-  .button{
+  /* .button{
     color: #fff !important;
-  }
+  } */
   .scroll{
     height: 650px;
     overflow-y: scroll;
@@ -131,7 +130,9 @@ header.masthead {
   
   .banner
   {
-    background: linear-gradient(to right,rgba(0,0,0,0.4),rgba(255, 255, 255, 0.2),rgba(0,0,0,0.4)) ,url("../img/about/banner.png");
+    /* background: linear-gradient(to right,rgba(0,0,0,0.4),rgba(255, 255, 255, 0.2),rgba(0,0,0,0.4)) ,url("../img/about/banner.png"); */
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("../img/cover/computer_networking.jpg");
+    background-position: left;
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
@@ -140,12 +141,34 @@ header.masthead {
     align-items: center;
     justify-content: center;
   }
+  .ring{
+    position: absolute;
+    width: 300px;
+    transform: translate(-50%, 0);
+  }
+  .ring img{
+    width: 100%;
+    transition: 2s;
+    animation: O_O 20s infinite linear;
+  }
+  @keyframes O_O {
+    50%{transform: rotateZ(180deg);}
+    100%{transform: rotateZ(360deg);}
+  }
   .overlay{
-    width: 50%;
-    opacity: 0.8;
-    background-color: #000000;
+    position: relative;
+    z-index: 99999;
+    width: 30%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/cover/computer_networking.jpg');
+    background-position: right;
     padding: 20px 10px;
     text-align: center;
+    border: 2px solid rgb(175, 171, 171);
+  }
+  @media (max-width: 650px ){
+    .overlay{
+      width: 80%;
+    }
   }
   .feedback_container{
     width: 40%;
@@ -167,4 +190,12 @@ header.masthead {
     .blog_container{
       padding: 0px;
     }
+  }
+  .about_bg
+  {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/cover/computer_networking.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    display: flex;
   }
