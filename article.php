@@ -38,7 +38,8 @@
         <meta property="og:title" content="<?php echo $row3['title']; ?>" />
         <meta property="og:description" content="<?php echo $row3['discription']; ?>" />
         <meta property="og:image" itemprop="image" content="http://networkinghub.net/assets/img/logo.png">
-        <meta property="og:type" content="networkinghub.com" />
+        <meta property="og:type" content="networkinghub.net" />
+        <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->

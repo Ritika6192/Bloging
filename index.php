@@ -21,7 +21,7 @@
         <meta property="og:title" content="Networking Hub | Networking Blogs" />
         <meta property="og:description" content="Learn Networking from basics." />
         <meta property="og:image" itemprop="image" content="http://networkinghub.net/assets/img/logo.png">
-        <meta property="og:type" content="networkinghub.com" />
+        <meta property="og:type" content="networkinghub.net" />
 
         <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
 
