@@ -13,6 +13,10 @@
 
     $data2 = mysqli_query($con, $query1);
 
+    $query3 = "SELECT * FROM `chapter_tb` WHERE id = $article_id";
+
+    $data3 = mysqli_query($con, $query3);
+
     if(mysqli_num_rows($data) > 0)
     {
      
@@ -20,11 +24,21 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8"/>
+        <?php
+        while($row3 = mysqli_fetch_assoc($data3))
+        {
+        ?>
+        <meta name="google-site-verification" content="7dXHQhbQPnjX2g9MnlDRf8PHcP-ZOZy_uh1vJjfrV_8" />
+        <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content=""/>
-        <meta name="author" content=""/>
-        <title>Network Hub</title>
+        <meta name="description" content="<?php echo $row3['discription']; ?>" />
+        <meta name="title" content="<?php echo $row3['title']; ?>" />
+        <title><?php echo $row3['title']; ?></title>
+        <meta property="og:site_name" content="Networking Hub">
+        <meta property="og:title" content="<?php echo $row3['title']; ?>" />
+        <meta property="og:description" content="<?php echo $row3['discription']; ?>" />
+        <meta property="og:image" itemprop="image" content="http://networkinghub.net/assets/img/logo.png">
+        <meta property="og:type" content="networkinghub.com" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
@@ -34,6 +48,9 @@
         <link href="assets/css/style.css" rel="stylesheet"/>
         <!-- bootstrap 5.1.3 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <?php
+        }
+        ?>
     </head>
     <body id="page-top">
     <!-- Navbar -->
