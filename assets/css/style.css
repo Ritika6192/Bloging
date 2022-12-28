@@ -5,6 +5,9 @@
 /* body{
   background: linear-gradient(90deg, rgba(11,11,122,1) 2%, rgba(20,104,159,1) 52%, rgba(11,11,122,1) 100%);
 } */
+.navbar-z{
+  z-index: 999999 !important;
+}
 .main_div{
   width: 100%;
   display: inline-block;
@@ -157,7 +160,7 @@ header.masthead {
   }
   .overlay{
     position: relative;
-    z-index: 99999;
+    z-index: 99 !important;
     width: 30%;
     background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('../img/cover/computer_networking.jpg');
     background-position: right;

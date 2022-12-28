@@ -50,7 +50,7 @@
                         <span class="navbar-toggler-icon"></span>
                         </button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body  navbar-z">
                         <div class="profile">
                             <img src="assets/img/about/0.jpg" alt="profile pic" width="100%">
                         </div>
