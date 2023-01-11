@@ -189,7 +189,7 @@ header.masthead {
       width: 80%;
     }
   }
-  @media (max-width: 575px ){
+  @media (max-width: 575px ) and (min-width: 0px ){
     .cot{
       width: 100%;
     }
@@ -198,8 +198,6 @@ header.masthead {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-right: var(--bs-gutter-x,.75rem);
-    padding-left: var(--bs-gutter-x,.75rem);
   }
   .about_bg
   {
