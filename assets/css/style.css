@@ -196,8 +196,12 @@ header.masthead {
   }
   .blog_container{
     width: 100%;
-    margin-right: auto;
-    margin-left: auto;
+  }
+  li{
+    padding: 0px !important;
+  }
+  ul{
+    padding: 0px !important;
   }
   .about_bg
   {
