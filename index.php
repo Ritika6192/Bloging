@@ -7,6 +7,7 @@
     $query = "SELECT * FROM chapter_tb";
 
     $data = mysqli_query($con, $query);
+    $data1 = mysqli_query($con, $query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -62,15 +63,27 @@
                                 <li><a href="https://youtube.com/@networkinghub2438" class="text-white"><i class="fab fa-youtube"></i></a></li>
                             </ul>
                             <p class="text-muted">Developer: Ritika Thombre</p>
+                            <?php
+                                while($row1 = mysqli_fetch_assoc($data1))
+                                {
+                            ?>
+                                <div class="p-3">
+                                    <a href="article.php?article=<?php echo $row1['id']; ?>" class="btn btn-primary w-100 text-center">
+                                        <h5 class="text-white"><?php echo $row1['title']; ?></h5>
+                                    </a>
+                                </div>
+                            <?php
+                                }
+                            ?>
                         </div>
                     </div>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- Banner section-->
         <div class="banner">
             <div class="ring">
-                <img src="assets/img/cover/ring.png" alt="asdf" />
+                <img src="assets/img/cover/ring.png" alt="ring" />
             </div>
             <div class="overlay">
                 <h1 id="heading" class="text-white">Networking Hub</h1>
@@ -162,13 +175,5 @@
             </div>
         </footer>
     </body>
-        <!-- Runing text animation -->
-        <script src="https://gt6192.github.io/PratikGTJsLib/Pratik_GT_textAp.js"></script>
-        <!-- <script>
-            window.onload = function(){
-                new Pratik_GT_textAp("Networking Hub", 100, "heading");
-            }
-        </script> -->
-        <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>
