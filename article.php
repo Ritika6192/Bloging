@@ -53,7 +53,7 @@
         }
         ?>
     </head>
-    <body class="bg-secondary" id="page-top">
+    <body id="page-top">
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div class="container">
@@ -77,7 +77,7 @@
             </div>
         </nav>
     <!-- blog -->
-    <div class="row w-100 bg-secondary" style="padding-top:140px">
+    <div class="row w-100 " style="padding-top:140px">
         <div class="cot col-sm-8">
         <?php
         while($row = mysqli_fetch_assoc($data))
@@ -87,12 +87,12 @@
                 <header class="masthead">
                     <div class="w-100">
                         <div class="masthead-heading text-uppercase text-dark">
-                            <h1 class="w-100 text-white"><?php echo $row['title']; ?></h1>
+                            <h1 class="w-100"><?php echo $row['title']; ?></h1>
                         </div>
                     </div>
                 </header> 
                 <div class="blog_container" style="text-align:justify">
-                        <div class="container  text-white">
+                        <div class="container">
                             <?php echo $row['body'];?>
                         </div>
                     <div class="video text-center pt-5">
@@ -138,8 +138,8 @@
             <div style="position:sticky;top:50px">
                 <div class="row scroll">
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase text-white">BLOGS</h2>
-                        <p class="section-subheading text-white">Suggested Blogs</p>
+                        <h2 class="section-heading text-uppercase">BLOGS</h2>
+                        <p class="section-subheading">Suggested Blogs</p>
                     </div>
                         <?php
                         while($row2 = mysqli_fetch_assoc($data2))
@@ -176,7 +176,7 @@ else
 ?>
     <!-- Footer-->
     <footer class="footer p-0">
-        <div class="container p-2 text-center text-white">
+        <div class="container p-2 text-center">
             <span>Copyright &copy; Networking hub 2022</span>
         </div>
     </footer>

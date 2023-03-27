@@ -36,7 +36,7 @@
         <!-- navigation bar -->
         <nav class="navbar navbar-dark bg-transparent fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-secondary" href="networkinghub.net"><img src="assets/img/about/logo1.png" alt="img" width="20%"></a>
+                <a class="navbar-brand text-secondary" href="index.php"><img src="assets/img/about/logo1.png" alt="img" width="20%"></a>
             </div>
         </nav>
         <!-- Banner section-->
@@ -85,10 +85,10 @@
         <div class="container-fluid change_bg w-100 p-5">
             <div class="row">
                     <div class="col-sm-6 p-5 text-center">
-                            <h1 class="heading text-light">Watch video to clear your ideas about my website</h1>
+                        <h1 class="heading text-light">Know more about Networking hub</h1>
                     </div>
                     <div class="col-sm-6 p-3">
-                        <video class="video1" width="100%" controls autoplay>
+                        <video class="video1" width="100%" controls>
                             <source src="assets/img/cover/media.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
