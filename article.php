@@ -53,15 +53,31 @@
         }
         ?>
     </head>
-    <body id="page-top">
-    <!-- Navbar -->
-    <nav class="navbar fixed-top" style="background-color:#292626">
-    <a class="navbar-brand text-white" style="padding-left:20px" href="index.php">
-        Home
-    </a>
-    </nav>
+    <body class="bg-secondary" id="page-top">
+    <!-- nav bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand text-secondary" href="#">-NH-</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="index.php #blog">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.php">About</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
     <!-- blog -->
-    <div class="row w-100" style="padding-top:140px">
+    <div class="row w-100 bg-secondary" style="padding-top:140px">
         <div class="cot col-sm-8">
         <?php
         while($row = mysqli_fetch_assoc($data))
@@ -71,16 +87,16 @@
                 <header class="masthead">
                     <div class="w-100">
                         <div class="masthead-heading text-uppercase text-dark">
-                            <h1 class="w-100"><?php echo $row['title']; ?></h1>
+                            <h1 class="w-100 text-white"><?php echo $row['title']; ?></h1>
                         </div>
                     </div>
                 </header> 
                 <div class="blog_container" style="text-align:justify">
-                        <div class="container text-dark ">
+                        <div class="container  text-white">
                             <?php echo $row['body'];?>
                         </div>
                     <div class="video text-center pt-5">
-                        <h2 class="text-dark text-center" style="padding:10px">The following video will enhance your understanding:</h2>
+                        <h2 class="text-white text-center" style="padding:10px">The following video will enhance your understanding:</h2>
                         <div class="d-flex p-5" style="justify-content:space-between">
                     <div class="previous">
                         <a href="article.php?article=<?php 
@@ -122,8 +138,8 @@
             <div style="position:sticky;top:50px">
                 <div class="row scroll">
                     <div class="text-center">
-                        <h2 class="section-heading text-uppercase text-dark">BLOGS</h2>
-                        <p class="section-subheading text-dark">Suggested Blogs</p>
+                        <h2 class="section-heading text-uppercase text-white">BLOGS</h2>
+                        <p class="section-subheading text-white">Suggested Blogs</p>
                     </div>
                         <?php
                         while($row2 = mysqli_fetch_assoc($data2))
@@ -160,13 +176,11 @@ else
 ?>
     <!-- Footer-->
     <footer class="footer p-0">
-        <div class="container p-2 text-center">
+        <div class="container p-2 text-center text-white">
             <span>Copyright &copy; Networking hub 2022</span>
         </div>
     </footer>
 <!-- bootstrap js -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>

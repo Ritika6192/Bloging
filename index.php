@@ -7,7 +7,6 @@
     $query = "SELECT * FROM chapter_tb";
 
     $data = mysqli_query($con, $query);
-    $data1 = mysqli_query($con, $query);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -23,9 +22,7 @@
         <meta property="og:description" content="Learn Networking from basics." />
         <meta property="og:image" itemprop="image" content="http://networkinghub.net/assets/img/logo.png">
         <meta property="og:type" content="networkinghub.net" />
-
         <link rel="icon" type="image/x-icon" href="assets/img/logo.png">
-
         <!-- Font Awesome icons-->
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!-- Google fonts-->
@@ -35,53 +32,15 @@
         <!-- bootstrap 5.1 -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
-
     <body>
         <!-- navigation bar -->
         <nav class="navbar navbar-dark bg-transparent fixed-top">
             <div class="container-fluid">
-                <a class="navbar-brand text-secondary" href="#">-NH-</a>
-                <button class="navbar-toggler bg-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header bg-black">
-                        <h5 class="offcanvas-title text-white" id="offcanvasNavbarLabel">- Networking Hub -</h5>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </div>
-                    <div class="offcanvas-body  navbar-z">
-                        <div class="profile">
-                            <img src="assets/img/about/0.jpg" alt="profile pic" width="100%">
-                        </div>
-                        <div class="info text-center text-white">
-                            <h5>“knowledge Is Not Power The Application Of Knowledge Is Power”</h5>
-                            <p class="follow text-muted">Follow me on:</p>
-                            <ul class="text-muted">
-                                <li><a href="https://www.instagram.com/code.with.ritika" class="text-white"><i class="fab fa-instagram"></a></i></li>
-                                <li><a href="https://youtube.com/@networkinghub2438" class="text-white"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                            <p class="text-muted">Developer: Ritika Thombre</p>
-                            <?php
-                                while($row1 = mysqli_fetch_assoc($data1))
-                                {
-                            ?>
-                                <div class="p-3">
-                                    <a href="article.php?article=<?php echo $row1['id']; ?>" class="btn btn-primary w-100 text-center">
-                                        <h5 class="text-white"><?php echo $row1['title']; ?></h5>
-                                    </a>
-                                </div>
-                            <?php
-                                }
-                            ?>
-                        </div>
-                    </div>
-                </div>
+                <a class="navbar-brand text-secondary" href="networkinghub.net"><img src="assets/img/about/logo1.png" alt="img" width="20%"></a>
             </div>
         </nav>
         <!-- Banner section-->
-        <div class="banner">
+        <div class="banner bg-secondary" id="banner">
             <div class="ring">
                 <img src="assets/img/cover/ring.png" alt="ring" />
             </div>
@@ -93,7 +52,7 @@
         </div>
         <!-- Blogs-->
         <section id="blog">
-            <div class="container mt-5">
+            <div class="container pt-5">
                 <div class="container">                
                     <div class="text-center">
                         <h2 class="section-heading text-uppercase">BLOGS</h2>
@@ -122,29 +81,44 @@
                 </div>
             </div>
         </section>
+        <!-- video -->
+        <div class="container-fluid change_bg w-100 p-5">
+            <div class="row">
+                    <div class="col-sm-6 p-5 text-center">
+                            <h1 class="heading text-light">Watch video to clear your ideas about my website</h1>
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <video class="video1" width="100%" controls autoplay>
+                            <source src="assets/img/cover/media.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+            </div>
+        </div>
         <!-- about section -->
-        <div class="about_bg">
-        <section class="container" class="about_bg" style="padding-top: 80px" >
+        <div>
+        <section class="container" class="about_bg" style="padding-top: 80px;padding-bottom: 80px" >
                 <div class="row">
-                    <div class="col-sm-6">
-                        <img class="w-100" src="assets/img/about/about.jpg" alt="image" width="50%">
+                    <div class="col-sm-6 text-center">
+                        <img class="w-50 rounded-circle" src="assets/img/about/2.jpg" alt="image">
                         <div class="mb-5"></div>
                     </div>
                     <div class="col-sm-6">
-                        <div class="text text-light">
-                            <h2>What is Networking?</h2>
-                            <p class="about_text">A computer network is a group of two or more computers that are linked together. Networks are usually used to share resources, exchange files or communicate with other users. There are many types of networks according to their size. Three main types of network are LAN(Local area network),MAN(Metropoletian area network) and WAN(Wide area network)</p>
+                        <div class="text">
+                            <h2>My story</h2>
+                            <p class="about_text">Welcome to Networking hub! It is a platform dedicated to sharing knowledgeable resources related to Coding and Networking.</p>
+                            <a class="text-white" href="about.php"><button class="btn btn-primary">Read more</button></a>
                         </div>
                     </div>
                 </div>
         </section>
         </div>
         <!-- feedback -->
-        <section style="padding: 94px 0px 94px" id="feedback">
+        <section  class="change_bg" style="padding: 94px 0px 94px" id="feedback">
             <!-- Wrapper container -->
             <div class="feedback_container">
                 <div class="text-center">
-                    <h2 class="text-uppercase">Give us a Feedback!</h2>
+                    <h2 class="text-uppercase text-white">Give a Feedback!</h2>
                 </div>
                 <form method="POST" action="feedbackquery.php">
                     <!-- Name input -->
