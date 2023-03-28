@@ -4,15 +4,14 @@
 if(isset($_POST['email'])){
       $email=$_POST['email'];
       $password=md5($_POST['password']);
-      
-      $_SESSION['useremail'] = $email;
-      $_SESSION['userpassword'] = $password;
 
       $sel = "SELECT * FROM login_tb where email='".$email."' AND password='".$password."'";
 
       $result = mysqli_query($con,$sel);
 
       if(mysqli_num_rows($result)==1){
+        $_SESSION['useremail'] = $email;
+        $_SESSION['userpassword'] = $password;
         header("location:pannel.php");
       }
 }
