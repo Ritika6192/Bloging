@@ -12,7 +12,7 @@ if(isset($_POST['email'])){
       if(mysqli_num_rows($result)==1){
         $_SESSION['useremail'] = $email;
         $_SESSION['userpassword'] = $password;
-        header("location:pannel.php");
+        header("location:dash.php");
       }
 }
 ?>
