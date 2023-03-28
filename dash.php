@@ -61,6 +61,8 @@
                 <h1 class="h3">Networking Hub <span class="h4 text-secondary">Dashboard</span></h1>
             </div>
 
+            <a href="logout.php" class="marbox" style="display: block;">Logout</a>
+
             <div class="marbox mt-5">
                 <div class="row">
                     <div class="col-sm-6 col-md-6 col-lg-6">
