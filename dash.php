@@ -67,14 +67,14 @@
                         <div class="gtbox bgviolet">
                             <h3 class="h4">All Articles</h3>
                             <p>View all articles.</p>
-                            <a href="pannel.php"><button class="gtbutton">View all</button></a>
+                            <a href="select.php"><button class="gtbutton">View all</button></a>
                         </div>
                     </div>
                     <div class="col-sm-6 col-md-6 col-lg-6">
                         <div class="gtbox bgviolet">
                             <h3 class="h4">Add Article</h3>
                             <p>Add new articles.</p>
-                            <a href="select.php"><button class="gtbutton">Add</button></a>
+                            <a href="pannel.php"><button class="gtbutton">Add</button></a>
                         </div>  
                     </div>
                 </div>
