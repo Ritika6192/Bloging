@@ -25,7 +25,7 @@
         <nav class="navbar navbar-dark rounded sha" style="background-color: rgb(132, 12, 180)">
             <div class="container-fluid">
                 <h1 class="navbar-brand m-0">Admin Pannel</h1>
-                <a href="index.php" class="btn text-white">Home</a>
+                <a href="dash.php" class="btn text-white">Home</a>
                 <a href="logout.php" class="btn text-white">Log out</a>
             </div>
         </nav>
@@ -57,7 +57,6 @@
             <input type="submit" name="submit" class="btn mt-3 text-white" style="background-color: rgb(132, 12, 180)" value="Add Data">
         </div>
         </form>
-            <a href="select.php"><input type="submit" class="btn mt-3 text-white" style="background-color: rgb(132, 12, 180)" value="Pre-existing data"></a>
     </div>
 </body>
   <script>
